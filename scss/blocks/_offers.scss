@@ -1,0 +1,52 @@
+.offers {
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    &__item {
+        @include size(360px, 260px);
+        background-color: $brown;
+        display: block;
+        margin-bottom: 30px;
+        text-transform: uppercase;
+        text-align: center;
+
+        &-woman {
+            background-image: url(/img/offers_woman.jpg);
+        }
+
+        &-man {
+            background-image: url(/img/offers_man.jpg);
+        }
+
+        &-kids {
+            background-image: url(/img/offers_kids.jpg);
+        }
+
+        &-accesories {
+            @include size(100%);
+            background-image: url(/img/offers_accesories.jpg);
+        }
+
+        & h3 {
+            @include font(16px, 19px, normal);
+            text-align: center;
+            color: $white;
+            padding-top: 105px;
+            text-transform: uppercase;
+        }
+
+        & p {
+            @include font(24px, 29px, 700);
+            color: $dark-pink;
+            padding-bottom: 105px;
+            text-transform: uppercase;
+        }
+    }
+}
+
+
+
