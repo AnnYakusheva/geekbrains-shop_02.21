@@ -52,7 +52,7 @@
                     &::before {
                         @include size(20px, 16px);
                         content: '';
-                        background: url(/img/registration_check.svg);
+                        background: url(img/registration_check.svg);
                         position: absolute;
                         top: 7px;
                         left: 0;
