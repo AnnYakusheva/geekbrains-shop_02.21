@@ -15,16 +15,13 @@
 
     &__logo {
         margin: 0 41px 0 0;
-
-        &-link {
-            
-        }
     }
 
     &__loupe {
         cursor: pointer;
         background: transparent;
         border: none;
+        outline: none;
         margin-right: 15px;
     }
 
@@ -45,6 +42,7 @@
     &__button {
         background-color: transparent;
         border: none;
+        outline: none;
         margin: 0 34px 0 0;
         cursor: pointer;
     }

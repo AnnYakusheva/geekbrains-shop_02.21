@@ -111,6 +111,7 @@ body {
   cursor: pointer;
   background: transparent;
   border: none;
+  outline: none;
   margin-right: 15px;
 }
 
@@ -130,6 +131,7 @@ body {
 .header__button {
   background-color: transparent;
   border: none;
+  outline: none;
   margin: 0 34px 0 0;
   cursor: pointer;
 }
@@ -602,8 +604,10 @@ body {
   border-radius: 0 30px 30px 0;
   position: absolute;
   border: none;
+  outline: none;
   top: -50px;
   left: 250px;
+  cursor: pointer;
 }
 
 .footer {
@@ -704,7 +708,7 @@ body {
   padding-left: 45px;
 }
 
-.registration_form__wrapper-text li:before {
+.registration_form__wrapper-text li::before {
   width: 20px;
   height: 16px;
   content: '';
@@ -771,7 +775,7 @@ body {
   color: #FFFFFF;
   text-transform: uppercase;
   padding: 16px 24.5px 17px 29px;
-  background-color: var(--dark-pink);
+  background-color: #F16D7F;
   border: none;
   margin-bottom: 96px;
   cursor: pointer;
