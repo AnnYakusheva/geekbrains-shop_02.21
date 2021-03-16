@@ -281,21 +281,21 @@ body {
 }
 
 .offers__item-woman {
-  background-image: url(img/offers_woman.jpg);
+  background-image: url(/img/offers_woman.jpg);
 }
 
 .offers__item-man {
-  background-image: url(img/offers_man.jpg);
+  background-image: url(/img/offers_man.jpg);
 }
 
 .offers__item-kids {
-  background-image: url(img/offers_kids.jpg);
+  background-image: url(/img/offers_kids.jpg);
 }
 
 .offers__item-accesories {
   width: 100%;
   height: auto;
-  background-image: url(img/offers_accesories.jpg);
+  background-image: url(/img/offers_accesories.jpg);
 }
 
 .offers__item h3 {
@@ -504,7 +504,7 @@ body {
 .subscription {
   width: auto;
   height: 448px;
-  background-image: url(img/subscription_background.jpg);
+  background-image: url(/img/subscription_background.jpg);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -712,7 +712,7 @@ body {
   width: 20px;
   height: 16px;
   content: '';
-  background: url(img/registration_check.svg);
+  background: url(/img/registration_check.svg);
   position: absolute;
   top: 7px;
   left: 0;
