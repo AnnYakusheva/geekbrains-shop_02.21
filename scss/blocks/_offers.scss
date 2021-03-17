@@ -15,20 +15,20 @@
         text-align: center;
 
         &-woman {
-            background-image: url(/img/offers_woman.jpg);
+            background-image: url(../img/offers_woman.jpg);
         }
 
         &-man {
-            background-image: url(/img/offers_man.jpg);
+            background-image: url(../img/offers_man.jpg);
         }
 
         &-kids {
-            background-image: url(/img/offers_kids.jpg);
+            background-image: url(../img/offers_kids.jpg);
         }
 
         &-accesories {
             @include size(100%);
-            background-image: url(/img/offers_accesories.jpg);
+            background-image: url(../img/offers_accesories.jpg);
         }
 
         & h3 {
