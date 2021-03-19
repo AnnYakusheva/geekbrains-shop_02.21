@@ -4,6 +4,10 @@
         color: $dark-blue;
         margin: 90px 0 5px;
         text-align: center;
+
+        @include tablet {
+            margin: 154px 0 5px;
+        }
     }
 
     &__subtitle {
@@ -11,6 +15,10 @@
         color: $soft-gray;
         margin-bottom: 48px;
         text-align: center;
+
+        @include tablet {
+            margin-bottom: 73px;
+        }
     }
 
     &__list {
@@ -22,13 +30,18 @@
     &__item {
         background-color: $dirty-white;
         margin-bottom: 30px;
+        max-width: 32%;
+
+        @include mobile {
+            min-width: 100%;
+        }
 
         &-overlay {
             position: relative;
 
             &::before {
                 display: none;
-                @include size(100%, 420px);       
+                @include size(100%, 100%);       
                 content: '';
                 position: absolute;
                 background: rgba(0, 0, 0, 0.7);
@@ -60,7 +73,7 @@
 
         & p {
             @include font(14px, 17px, 300);
-            @include size(314.74px);
+            width: 100%;
             padding-bottom: 18px;
             color: $dark-gray;
         }
@@ -79,6 +92,10 @@
     &__button {
         margin: 48.5px auto 95.5px;
         text-align: center;
+
+        @include tablet {
+            margin: 32px auto 65px;
+        }
 
         & a {
             @include font(16px, 19px, normal);
@@ -110,3 +127,8 @@
     }
 }
 
+@media (max-width: 890px) {
+    .products__item {
+        max-width: 47%;
+    }
+}

@@ -1,24 +1,46 @@
 .subscription {
     @include size(auto, 448px);
-	background-image: url(../img/subscription_background.jpg);
+	background: no-repeat url(../img/subscription_background.jpg);
+    background-size: 100% 100%;
 	display: flex;
 	align-items: center;
+
+    @include tablet {
+        min-height: 536px;
+    }
 
     &__block {
         display: flex;
         justify-content: space-between;
+
+        @include tablet {
+            align-items: center;
+            flex-direction: column;
+        }
     }
     
     &__review {
         width: 359.45px;
         text-align: center;
 
+        @include tablet {
+            margin-bottom: 48px;
+        }
+
         & p {
             @include font(20px, 24px, 400);
+
+            @include mobile {
+                @include font(19px, 22.8px);
+            }
         }
         
         & span {
             @include font(20px, 24px, 400, italic);
+
+            @include mobile {
+                @include font(19px, 22.8px, 400, italic);
+            }
         }
         
         & img {
@@ -35,6 +57,14 @@
             @include font(18px, 30px, 400);
             padding-bottom: 32px;
             text-transform: uppercase;
+
+            @include tablet {
+                padding-bottom: 27px;
+            }
+
+            @include mobile {
+                @include font(14px, 21.5px);
+            }
         }
         
         & span {

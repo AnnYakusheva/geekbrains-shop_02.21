@@ -112,9 +112,25 @@
 }
 
 
+@media (max-width: 768px) {
+    .header {
+        &__logo {
+            margin: 0 41px 0 16px;
+        }
 
+        &__cart {
+            margin: 0 16px 0 0;
+        }
+    }
+}
 
-
+@media (max-width: 375px) {
+    .header {
+        &__profile, &__cart {
+            display: none;
+        }
+    }
+}
 
 
 
